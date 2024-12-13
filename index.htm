@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Cyruz Dave</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="Cy.__1_-removebg-preview.png" type="image/x-icon">
+  <link rel="stylesheet" href="style.css">
+  <link id="theme-stylesheet" rel="stylesheet" href="light.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<style>
+            .floating-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007BFF;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 24px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+
+        .floating-button:hover {
+            background-color: #0056b3;
+            transform: scale(1.1);
+        }
+        @keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.hidden {
+  opacity: 0;
+  visibility: hidden;
+  transition: visibility 0s 1s, opacity 1s;
+}
+
+.visible {
+  animation: slideIn 1s ease-out forwards;
+}
+
+header.hidden {
+  animation: fadeOut 1s forwards;
+  visibility: hidden;
+}
+
+</style>
+<body>
+
+<div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#skills">Skills</a>
+    <a href="#contact">Contact</a>
+    <button class="floating-button" id="theme-toggle" onclick="toggleTheme()">
+        <i class="fas fa-sun"></i>
+</div>
+  <!-- Homepage -->
+  <header id="home">
+    <div class="hero">
+      <h1>Cyruz Dave</h1>
+      <p class="title">I'm a Full Stack Developer</p>
+      <p class="tagline">Building elegant and scalable solutions for the web.</p>
+      <a href="#contact" class="cta">Contact Me</a>
+    </div>
+  </header>
+
+  <!-- About Me -->
+  <section id="about" class="about">
+    <h2>About Me</h2>
+    <div class="container">
+        <div class="card" onclick="flipCard(this)">
+            <div class="front1">
+                <h1>BACKGROUND</h1>
+            </div>
+            <div class="back">
+                <p>Background: I am a full stack web developer with a passion for creating beautiful and functional designs. I enjoy problem-solving and learning new technologies to enhance my skills.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="front2">
+                <h1>SKILLS</h1>
+            </div>
+            <div class="back">
+                <p>Skills:
+                    <br>
+                    <li>Graphic Designer</li>
+                    <li>CopyWriter</li>
+                    <li>Full Stack Developer</li>
+                    <li>UI/UX Designer</li>
+                </p>
+            </div>
+        </div>
+
+        <div class="card" onclick="flipCard(this)">
+            <div class="front3">
+                <h1>UNIQUE SELLING POINT</h1>
+            </div>
+            <div class="back">
+                <p>Unique Selling Point: Delivering tailored solutions with a user-first approach and a passion for quality.</p>
+            </div>
+        </div>
+    </div>
+  </section>
+<!-- Projects -->
+<section id="projects" class="projects" style="padding: 40px;">
+    <h2 style="text-align: center; color: #fff;">Projects</h2>
+    <div class="projects" style="display: flex; justify-content: space-between; flex-wrap: wrap; gap: 20px;">
+        <div class="project" style="background-color: #D6DFE8; padding: 20px; border-radius: 8px; width: 48%; max-width: 800px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #2E3B4E; text-align: center;">MicroDave Studio Website</h3>
+            <p style="color: #2E3B4E; text-align: center;">Description: MD Studio website with Reservation form and separated admin page.</p>
+            <p style="color: #2E3B4E; font-weight: bold; text-align: center;"><strong>Tools:</strong> HTML, CSS, JavaScript, Php, MySQL</p>
+            <div style="display: flex; justify-content: space-between; gap: 10px;">
+                <img src="image.png" alt="screenshot1" style="width: 100%; height: 400px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); margin-top: 120px;">
+            </div>
+        </div>
+        <div class="project" style="background-color: #D6DFE8; padding: 20px; border-radius: 8px; width: 48%; max-width: 800px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+            <h3 style="color: #2E3B4E; text-align: center;">Disaster.Awareness.Emergency.Tool<br>(on development)</h3>
+            <p style="color: #2E3B4E; text-align: center;">Description: D.A.E.T is an application exclusive for DAET only it contains various information about daet and its main purpose is for disaster risk.</p>
+            <p style="color: #2E3B4E; font-weight: bold; text-align: center;"><strong>Tools:</strong> Figma, Canva</p>
+            <div style="display: flex; justify-content: space-between; gap: 10px;">
+                <img src="2.png" alt="screenshot1" style="width: 100%; height: 460px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="Disasters.png" alt="screenshot2" style="width: 100%; height: 460px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+                <img src="Information main page.png" alt="screenshot2" style="width: 100%; height: 460px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);">
+
+            </div>
+        </div>
+    </div>
+</section>
+
+
+ <!-- Skills and Tools -->
+<section id="skills" style="padding: 40px;">
+    <h2 style="text-align: center; color: #A8CAD6;">Skills and Tools</h2>
+    <div class="skills-container" style="display: flex; justify-content: space-around; flex-wrap: wrap;">
+      <div style="background-color: #EEF6F2; padding: 20px; margin: 10px; border-radius: 8px; width: 250px;">
+        <h3 style="color: #1F1F1F; text-align: center;">Programming Languages</h3>
+        <ul style="list-style-type: none; padding: 0; text-align: center;">
+          <li style="color: #2E3B4E; font-weight: bold;">JavaScript</li>
+          <li style="color: #2E3B4E; font-weight: bold;">Python</li>
+          <li style="color: #2E3B4E; font-weight: bold;">HTML/CSS</li>
+        </ul>
+      </div>
+      <div style="background-color: #fff; padding: 20px; margin: 10px; border-radius: 8px; width: 250px;">
+        <h3 style="color: #1F1F1F; text-align: center;">Frameworks</h3>
+        <ul style="list-style-type: none; padding: 0; text-align: center;">
+          <li style="color: #2E3B4E; font-weight: bold;">React</li>
+          <li style="color: #2E3B4E; font-weight: bold;">Node.js</li>
+          <li style="color: #2E3B4E; font-weight: bold;">Bootstrap</li>
+        </ul>
+      </div>
+      <div style="background-color: #C2EBEF; padding: 20px; margin: 10px; border-radius: 8px; width: 250px;">
+        <h3 style="color: #1F1F1F; text-align: center;">Tools</h3>
+        <ul style="list-style-type: none; padding: 0; text-align: center;">
+          <li style="color: #2E3B4E; font-weight: bold;">GitHub</li>
+          <li style="color: #2E3B4E; font-weight: bold;">Figma</li>
+          <li style="color: #2E3B4E; font-weight: bold;">Canva</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- Contact Form -->
+  <div id="contact" class="contact">
+    <h2>Contact Me at my Facebook</h2>
+    <a href="https://www.facebook.com/cyruzdave26" target="_blank">Click here</a>
+    <div class="direct-links">
+      <a href="mailto:youremail@example.com">Email</a>
+      <a href="tel:+639936843176">Phone</a>
+    </div>
+  </d>
+
+  <!-- Footer -->
+  <footer>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="social-media">
+      <a href="https://github.com/yourprofile"><i class="fab fa-github"></i></a>
+      <a href="https://instagram.com/yourprofile"><i class="fab fa-instagram"></i></a>
+    </div>
+    <p>&copy; 2024 Cyruz Dave. All Rights Reserved.</p>
+  </footer>
+  <script>
+    // Placeholder for interactive functionalities
+
+// Smooth Scroll for navigation
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      e.preventDefault();
+      document.querySelector(this.getAttribute('href')).scrollIntoView({
+        behavior: 'smooth'
+      });
+    });
+  });
+
+  // Contact Form Submit Action
+  document.querySelector("#contact-form").addEventListener("submit", function(e) {
+    e.preventDefault();
+    alert("Thank you for reaching out! I'll get back to you soon.");
+  });
+
+  function flipCard(cardElement) {
+    cardElement.classList.toggle('flipped');
+}
+document.addEventListener('DOMContentLoaded', () => {
+    const sections = document.querySelectorAll('header, section');
+
+    const observerOptions = {
+      root: null,
+      threshold: 0.1, // Trigger when 10% of the section is visible
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        const section = entry.target;
+
+        if (entry.isIntersecting) {
+          section.classList.add('visible');
+          section.classList.remove('hidden');
+        } else {
+          section.classList.add('hidden');
+          section.classList.remove('visible');
+        }
+      });
+    }, observerOptions);
+
+    sections.forEach((section) => observer.observe(section));
+  });
+// Check for dark mode preference in localStorage
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+const currentTheme = localStorage.getItem('theme');
+
+if (currentTheme === 'dark') {
+    document.body.classList.add('dark-mode');
+}
+
+// Toggle dark mode on button click
+darkModeToggle.addEventListener('click', () => {
+    document.body.classList.toggle('dark-mode');
+
+    // Save the theme preference in localStorage
+    if (document.body.classList.contains('dark-mode')) {
+        localStorage.setItem('theme', 'dark');
+    } else {
+        localStorage.setItem('theme', 'light');
+    }
+});
+function toggleTheme() {
+    const stylesheet = document.getElementById("theme-stylesheet");
+    const toggleButtonIcon = document.querySelector("#theme-toggle i");
+
+    // Toggle theme and update icon
+    if (stylesheet.getAttribute("href") === "light.css") {
+        stylesheet.setAttribute("href", "dark.css");
+        toggleButtonIcon.className = "fas fa-moon"; // Change icon to moon
+    } else {
+        stylesheet.setAttribute("href", "light.css");
+        toggleButtonIcon.className = "fas fa-sun"; // Change icon to sun
+    }
+}
+
+  </script>
+</body>
+</html>

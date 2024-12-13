@@ -1,0 +1,33 @@
+/*
+    PALETTES
+#E5F8F8
+#EEF6F2
+#D6DFE8
+#C2EBEF
+#A8CAD6
+#D5E3E4
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #EEF6F2;
+  }
+  a{
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header {
+    color: #A8CAD6;
+    padding: 1em 0;
+    text-align: center;
+  }
+#projects{
+    background-color: #A8CAD6;
+}
+.contact{
+    background-color: #A8CAD6;
+}

@@ -1,0 +1,337 @@
+   /*
+    PALETTES
+#E5F8F8
+#EEF6F2
+#D6DFE8
+#C2EBEF
+#A8CAD6
+#D5E3E4
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #121212;
+  }
+  a{
+    font-weight: bold;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  header {
+    color: #A8CAD6;
+    padding: 1em 0;
+    text-align: center;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 2rem 0rem;
+  }
+  .navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    padding: 0.5em 1em;
+    background-color: #A8CAD6;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  .navbar a:hover {
+    color: #fff;
+    background-color: #D5E3E4;
+  }
+  .section {
+    padding: 50px;
+    text-align: center;
+  }
+  .hero{
+    padding: 10rem;
+    line-height: 2rem;
+  }
+  .hero h1{
+    font-size: 7rem;
+  }
+  .hero p{
+    font-size: 2rem;
+  }
+  .hero a{
+    padding: 10px;
+    border-radius: 50px;
+    background-color: #83B8C6;
+    font-size: 15px;
+    color: #fff;
+    transition: background-color 0.3s;
+  }
+  .hero a:hover{
+    color: #fff;
+    background-color: #D5E3E4;
+  }
+  footer {
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 20px;
+  }
+  footer a{
+    color: wheat;;
+  }
+  .skills{
+    margin: 0 auto;
+    text-align: left;
+  }
+  .projects{
+
+  }
+  .project {
+    border: 1px solid #ddd;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+  }
+  .about{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+  }
+  .about h2{
+    color: #A8CAD6;
+    font-size: 40px;
+    margin-top: 150px;
+  }
+  .card {
+    width: 70rem;
+    background: #D6DFE8;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin: 15px;
+    padding: 20px;
+    text-align: center;
+    cursor: pointer;
+    transition: transform 0.3s;
+
+    font-weight: bold;
+    color: #83B8C6;
+  }
+  .card:hover {
+    transform: scale(1.05);
+  }
+  .card h1 {
+    margin: 0;
+  }
+  .carousel img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 15px;
+  }
+ /* General Section Styling */
+.projects {
+    padding: 2rem;
+    background-color: #E5F8F8;  /* Use #E5F8F8 for the background */
+    color: #333; /* Retaining text color for contrast */
+  }
+
+  .projects h2 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 2rem;
+    color: #222;  /* Retaining dark color for heading */
+  }
+
+  .projects-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+  }
+  #projects{
+    background-color: #1F1F1F;
+}
+  .project {
+    background-color: #EEF6F2;  /* Use #EEF6F2 for project cards background */
+    border: 1px solid #D6DFE8;  /* Use #D6DFE8 for border color */
+    border-radius: 8px;
+    padding: 1rem;
+    max-width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  .project h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #007BFF;  /* Retaining this vibrant blue color */
+  }
+
+  .project-description {
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    color: #555;  /* Keeping neutral color for description */
+  }
+
+  .project-images {
+    display: flex;
+    gap: 0.5rem;
+  }
+
+  .project-images img {
+    max-width: 100%;
+    border-radius: 4px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .projects-container {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    background-color: #1F1F1F;
+    text-align: center;
+  }
+  div .contact h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  #contact-form {
+    width: 700px;
+    margin: 0 auto 30px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+
+  #contact-form textarea {
+    resize: vertical;
+    min-height: 150px;
+  }
+
+  #contact-form button {
+    padding: 10px 15px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #007bff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  #contact-form button:hover {
+    background-color: #0056b3;
+  }
+  .contact h2{
+    color: #83B8C6;
+  }
+  .direct-links {
+    margin-top: 20px;
+  }
+
+  .direct-links a {
+    margin: 0 10px;
+    color: #007bff;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+
+  .direct-links a:hover {
+    color: #0056b3;
+  }
+
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    section#contact {
+      padding: 30px 10px;
+    }
+
+    #contact-form {
+      gap: 10px;
+    }
+
+    .direct-links a {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hero h1 {
+    animation: fadeIn 1s ease-out;
+  }
+
+  .hero p {
+    animation: fadeIn 1.5s ease-out;
+  }
+
+  .hero a {
+    animation: fadeIn 2s ease-out;
+  }
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+    }
+    to {
+      opacity: 0;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      opacity: 0;
+      transform: translateY(50px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .hidden {
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s 1s, opacity 1s;
+  }
+
+  .visible {
+    animation: slideIn 1s ease-out forwards;
+  }
+
+  header.hidden {
+    animation: fadeOut 1s forwards;
+    visibility: hidden;
+  }
